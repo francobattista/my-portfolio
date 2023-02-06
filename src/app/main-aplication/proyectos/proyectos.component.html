@@ -1,0 +1,14 @@
+<div class="div">
+    <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+    <div class="fila" >
+        <div class="proyecto" *ngFor="let item of repos">
+            <a href="https://github.com/{{item.full_name}}">    
+                <img src="./../../../assets/imgs/yo.jpg" alt="">
+                <div class="info">
+                    <h4>{{item.description}}</h4>
+                    <p>{{item.language}}</p>
+                </div>
+            </a>
+        </div> 
+    </div>
+</div>

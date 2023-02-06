@@ -1,0 +1,47 @@
+@use '@angular/material' as mat;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+@import './dark-theme';
+@import './light-theme';
+@include mat.core();
+
+$my-typography: mat.define-typography-config(
+  $font-family: 'Montserrat'
+);
+
+
+@include mat.all-component-typographies($my-typography);
+
+
+// Apply the light theme only when the user prefers light themes.
+.light-theme{
+  @include mat.core-color($light-theme);
+  @include mat.all-component-themes($light-theme);
+  background: #ffffff;
+  color: black;
+  $hover-light: #ff5080;
+
+  a:hover{
+    color: $hover-light;
+  }
+}
+
+
+
+.dark-theme {
+  @include mat.core-theme($dark-theme);
+  @include mat.all-component-themes($dark-theme);
+  background: #121212;
+  color: white;
+  $hover-dark:#ff5080;
+  
+  a:hover{
+    color: $hover-dark;
+  }
+}
+
+
+
+
+
+
+

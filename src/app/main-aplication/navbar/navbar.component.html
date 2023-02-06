@@ -1,0 +1,33 @@
+<header>
+    <div class="contenido-header">
+        <h1>/FB/</h1>
+        <nav id="nav" class="">
+            <ul id="links">
+                <li><a (click)="scrollTo('inicio')">INICIO</a></li>
+                <li><a (click)="scrollTo('sobremi')">SOBRE MI</a></li>
+                <li><a (click)="scrollTo('skills')">PROYECTOS</a></li>
+                <li><a (click)="scrollTo('proyectos')">PORFOLIO</a></li>
+                <li><a (click)="scrollTo('contacto')">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div id="icono-nav" style="display: none;">
+            
+        </div>
+        <div class="redes">
+            <a href="https://www.instagram.com/fraanbattista/"><img src="./../../../assets/imgs/IG.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/franco-battista-b765961b8/"><img src="./../../../assets/imgs/linkedin.png" alt=""></a>
+            <a href="https://twitter.com/fraaanbattista"><img src="./../../../assets/imgs/Twitter.jpg" alt=""></a>
+        </div>
+        <div class="languaje" style="display: flex;">
+            <img *ngIf="true" src="./../../../assets/imgs/spanish.png" alt="">
+            <img *ngIf="false" src="./../../../assets/imgs/spanish.png" alt="">
+            <a (click)="changeLanguage()"><mat-icon>change_circle</mat-icon></a>
+        </div>
+        <div class="languaje" style="display: flex;">
+            <a (click)="changeTheme()"><mat-icon *ngIf="true">light_mode</mat-icon><mat-icon *ngIf="false">dark_mode</mat-icon></a>
+
+        </div>
+    </div>
+</header>
+
+

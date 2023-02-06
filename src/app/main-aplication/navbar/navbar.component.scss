@@ -1,0 +1,83 @@
+@import './../../../themes/theming';
+
+header{
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+
+header .contenido-header
+{
+    max-width: 1100px; /* ATENCION A ESTA */
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+header .contenido-header h1{
+    text-align: center;
+    color: #ff5080;
+    margin: 0 0 0; /* Para pisar la clase default de material */
+}
+
+header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header .contenido-header nav ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    caret-color: transparent;
+    //color: inherit;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+/*
+header .contenido-header nav ul li a:hover{
+    color: $hover;
+}*/
+
+header .contenido-header .redes a{
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+/*header .contenido-header .redes a:hover{
+    color: #ff5080;
+}*/
+
+.redes img{
+    width: 30px;
+    border-radius: 50%;
+    filter: brightness(75%);
+}
+
+.languaje {
+    max-width: 50px;
+    align-items: center;    
+}
+
+
+.languaje img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+mat-icon{
+    overflow: visible;
+}
+

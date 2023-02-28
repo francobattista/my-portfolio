@@ -23,7 +23,6 @@
 .sobremi .titulo-seccion{
     font-size: 22px;
     text-transform: uppercase;
-    color:#111135;
     text-decoration: underline;
     text-decoration-color: #d3d3d3;
     text-decoration-thickness: 5px;
@@ -36,9 +35,6 @@
     letter-spacing: 2px;
 }
 
-.sobremi h2 span{
-    color: #ff5080;
-}
 
 
 .sobremi h3{
@@ -52,22 +48,16 @@
 .sobremi p {
     font-size: 14px;
     line-height: 25px;
-    color: #565656;
     margin-bottom: 12px;
 }
 
 .sobremi a{
     display: inline-block;
     text-decoration: none;
-    color: #000;
     border-radius: 30px;
     padding: 10px 20px;
-    border: 1px solid #000;
+    border: 1px solid #f3f3f3;
     margin-top: 30px;
     transition: .5s;
 }
 
-.sobremi a:hover{
-    background-color: #ff5080;
-    color: #fff;
-}

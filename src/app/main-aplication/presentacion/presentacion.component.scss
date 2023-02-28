@@ -24,7 +24,6 @@
 
 .presentacion h2 span{
     font-size: 25px;
-    color: #ff5080;
 }
 
 .presentacion .descripcion{
@@ -45,9 +44,7 @@
     font-weight: bold;
     text-transform: uppercase;
     transition: .5s;
+    cursor: pointer;
 }
 
-.presentacion a:hover{
-    background-color: #ff5080;
-}
 

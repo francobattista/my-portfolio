@@ -1,6 +1,6 @@
 <header>
     <div class="contenido-header">
-        <h1>/FB/</h1>
+        <h1 class="title">/FB/</h1>
         <nav id="nav" class="">
             <ul id="links">
                 <li><a (click)="scrollTo('inicio')">INICIO</a></li>
@@ -14,9 +14,9 @@
             
         </div>
         <div class="redes">
-            <a href="https://www.instagram.com/fraanbattista/"><img src="./../../../assets/imgs/IG.png" alt=""></a>
+            <a href="https://www.instagram.com/fraanbattista/" ><img src="./../../../assets/imgs/IG.png" alt=""></a>
             <a href="https://www.linkedin.com/in/franco-battista-b765961b8/"><img src="./../../../assets/imgs/linkedin.png" alt=""></a>
-            <a href="https://twitter.com/fraaanbattista"><img src="./../../../assets/imgs/Twitter.jpg" alt=""></a>
+            <a href="https://twitter.com/fraaanbattista" style="height: 30px;"><img src="./../../../assets/imgs/TWITTER.png" alt="" style="height: 30px;"></a>
         </div>
         <div class="languaje" style="display: flex;">
             <img *ngIf="true" src="./../../../assets/imgs/spanish.png" alt="">
@@ -24,8 +24,7 @@
             <a (click)="changeLanguage()"><mat-icon>change_circle</mat-icon></a>
         </div>
         <div class="languaje" style="display: flex;">
-            <a (click)="changeTheme()"><mat-icon *ngIf="true">light_mode</mat-icon><mat-icon *ngIf="false">dark_mode</mat-icon></a>
-
+            <a (click)="changeTheme()"><mat-icon *ngIf="generalService.appTheme == 'dark'">light_mode</mat-icon><mat-icon *ngIf="generalService.appTheme == 'light'">dark_mode</mat-icon></a>
         </div>
     </div>
 </header>

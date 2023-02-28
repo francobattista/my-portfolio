@@ -8,20 +8,53 @@ $my-typography: mat.define-typography-config(
   $font-family: 'Montserrat'
 );
 
-
 @include mat.all-component-typographies($my-typography);
 
-
+body :not(input){
+  caret-color: transparent;
+}
 // Apply the light theme only when the user prefers light themes.
 .light-theme{
   @include mat.core-color($light-theme);
   @include mat.all-component-themes($light-theme);
-  background: #ffffff;
+ //background: #ffffff;
   color: black;
   $hover-light: #ff5080;
+  $navbar-light: gray;
 
-  a:hover{
-    color: $hover-light;
+  a:hover ,input[type="submit"]:hover{
+    background-color: $hover-light;
+  }
+
+  .title{
+    color: $hover-light;  
+  }
+
+  transition: all 3s;
+
+
+  li a:hover{
+    color: $hover-light;  
+    background-color: transparent;
+  }
+  
+
+  header{
+    background-color: rgba(125, 123, 123, 0.8);
+
+  }
+  #inicio{
+    background: url("./../assets/imgs/f2.png");
+  }
+
+  mat-icon:hover{
+    color: $hover-light;  
+    background-color: transparent;
+  }
+
+  .skill{
+    background-color: rgba(125, 123, 123, 0.8);
+
   }
 }
 
@@ -32,16 +65,52 @@ $my-typography: mat.define-typography-config(
   @include mat.all-component-themes($dark-theme);
   background: #121212;
   color: white;
-  $hover-dark:#ff5080;
+  $main-dark:#1D9BF0;
+  text-decoration-color: $main-dark;
   
-  a:hover{
-    color: $hover-dark;
+  .title{
+    color: $main-dark;
   }
+  transition: all 3s;
+
+  .skill{
+    color:#121212;
+  }
+
+ #inicio{
+    background: url("./../assets/imgs/f1.jpg");
+    animation: gd 1s ease-in-out;
+  }
+  a,input{
+    color: white;
+  }
+
+  a:hover ,input[type="submit"]:hover{
+    background-color: $main-dark;
+  }
+  .skill{
+    background-color: #fff;
+
+  }
+
+  header{
+    background-color: rgba(0,0,0,.8);
+  }
+
+  li a{
+
+  }
+
+
+  li a:hover{
+    color: $main-dark;  
+    background-color: transparent;
+  }
+
+  mat-icon:hover{
+    color: $main-dark;  
+    background-color: transparent;
+  }
+
 }
-
-
-
-
-
-
 

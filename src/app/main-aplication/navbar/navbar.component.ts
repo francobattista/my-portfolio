@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GeneralService } from '../general.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,8 +9,8 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   languages = [{id:'spanish', icon:''},{id:'english',icon:''}]
 
-  constructor() {
-
+  constructor(public generalService : GeneralService) {
+    //this.changeTheme();
   }
 
   changeLanguage(){
@@ -27,17 +28,20 @@ export class NavbarComponent {
   }
 
   changeTheme(){
-    
     if(document.body.classList.contains('dark-theme'))
     {
       document.body.classList.remove('dark-theme')
       document.body.classList.add('light-theme')
+      this.generalService.setApplicationTheme('light');
+
     }
     else
     {
       document.body.classList.remove('light-theme')
       document.body.classList.add('dark-theme')
+      this.generalService.setApplicationTheme('dark');
     }
+
   }
 
   scrollTo(section: string) {

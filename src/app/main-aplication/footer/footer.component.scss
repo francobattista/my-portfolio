@@ -12,3 +12,13 @@ footer a{
     margin: 5px;
     font-size: 26px;
 }
+
+.redes img{
+    width: 30px;
+    border-radius: 50%;
+    filter: brightness(75%);
+}
+
+.redes a:hover{
+    background-color: transparent;
+}

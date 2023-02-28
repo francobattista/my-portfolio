@@ -3,9 +3,9 @@
 .titulo-seccion{
     font-size: 22px;
     text-transform: uppercase;
-    color:#111135;
+    //color:#111135;
     text-decoration: underline;
-    text-decoration-color: #d3d3d3;
+    text-decoration-color: inherit;
     text-decoration-thickness: 5px;
 }
 
@@ -19,17 +19,17 @@
 
 .fila .skill{
     width: 200px;
-    background-color: #fff;
+    //background-color: #fff;
     padding: 30px;
     margin: 5px 5px;
     border-right: 5px;
     transition: .5s;
     cursor: pointer;
+    border-radius: 2.5%;
 }
 
 .fila .skill:hover{
-    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
-    
+    box-shadow: 5px 5px 10px #1D9BF0, -5px -5px 10px #1D9BF0;
 }
 
 .fila .skill h4{

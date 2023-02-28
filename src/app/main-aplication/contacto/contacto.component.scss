@@ -3,7 +3,7 @@
     font-size: 22px;
     text-align: center;
     text-transform: uppercase;
-    color: #111135;
+    //color: #111135;
     text-decoration: underline;
     text-decoration: #d3d3d3;
     text-decoration-thickness: 5px;
@@ -40,28 +40,23 @@
 }
 
 .btn-enviar{
-    display: bloc;
+    display: block;
     margin: auto;
     cursor: pointer;
     transition: .5s;
     padding: 10px 15px;
     font-size: 18px;
     font-weight: bold;
+    background-color: transparent;
 }
 
-.btn-enviar:hover{
-    background-color: #ff5080;
-    color: #fff;
-}
+
 
 .fila input, textarea{
     display: block;
     width: 100%;
 }
 
-.fila textarea{
-    
-}
 .contenedor-form input{ /*Beuna aclaracion para saber, los elem en bloque ocupan todo el ancho. Entonces sirve meterles un display flex a ellos mismos. Es decir, si fuera inline (creo) no servirira */
     display: flex;
     justify-content: center;

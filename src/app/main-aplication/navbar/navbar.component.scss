@@ -1,11 +1,11 @@
 @import './../../../themes/theming';
 
 header{
-    background-color: rgba(0,0,0,.8);
     position: fixed;
     width: 100%;
     z-index: 100;
     top: 0;
+    transition: 3s;
 }
 
 
@@ -22,7 +22,7 @@ header .contenido-header
 
 header .contenido-header h1{
     text-align: center;
-    color: #ff5080;
+    //color: #ff5080;
     margin: 0 0 0; /* Para pisar la clase default de material */
 }
 
@@ -42,10 +42,15 @@ header .contenido-header nav ul li a{
     transition: .5s;
 }
 
-/*
-header .contenido-header nav ul li a:hover{
-    color: $hover;
-}*/
+.languaje a{
+    background-color: transparent;
+}
+
+.languaje a mat-icon:hover{
+    cursor: pointer;
+    transition: .5s;
+}
+
 
 header .contenido-header .redes a{
     color:#fff;
@@ -55,9 +60,9 @@ header .contenido-header .redes a{
     transition: .5s;
 }
 
-/*header .contenido-header .redes a:hover{
-    color: #ff5080;
-}*/
+.redes a:hover{
+    background-color: transparent;
+}
 
 .redes img{
     width: 30px;
